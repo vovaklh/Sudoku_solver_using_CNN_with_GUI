@@ -10,7 +10,7 @@ from tkinter import messagebox
 ap = argparse.ArgumentParser()
 ap.add_argument("-i", "--image", required=True)
 ap.add_argument("-m", "--model", default="Resources/models/model.h5")
-ap.add_argument("-d", "--debug", type=int, default=-1)
+ap.add_argument("-d", "--debug", type=int, default=1)
 args = vars(ap.parse_args())
 
 pygame.font.init()
