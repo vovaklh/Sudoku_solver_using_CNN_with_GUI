@@ -15,7 +15,7 @@ def load_model(path):
 def load_image(path):
     image = cv2.imread(path)
 
-    if image.shape[1] < 1:
+    if image.shape[1] < 600:
         image = imutils.resize(image, width=600)
 
     return image
